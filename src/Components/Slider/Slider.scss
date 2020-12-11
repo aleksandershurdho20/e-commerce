@@ -1,0 +1,24 @@
+.wrapper {
+  //   padding: 40px;
+  //   background: #419be0;
+  .slick-slide img-1 {
+    margin: auto;
+  }
+
+  .img-1 {
+    height: 300px;
+    background-repeat: no-repeat;
+
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=%5B1000%2C648%5D&w=2000&h=1047&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F14%2F2017%2F12%2F11%2Fgettyimages-539573922-2000.jpg");
+  }
+  .img-2 {
+    height: 300px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqzuGE8uz1THJLpVDT4u45hVjXJdeMg4Prsg&usqp=CAU");
+    background-repeat: no-repeat;
+  }
+  .img-3 {
+    height: 300px;
+    background-image: url("https://i.ytimg.com/vi/S9O60KV6TCM/maxresdefault.jpg");
+    background-repeat: no-repeat;
+  }
+}

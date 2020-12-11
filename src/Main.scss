@@ -2,5 +2,24 @@
 
 body {
   font-family: "Andika New Basic", sans-serif;
-  font-size: 1.8rem;
+  // font-size: 1.8rem;
+}
+.global-container {
+  position: relative;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: calc(100% - 6.5rem);
+  max-width: 1450px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
