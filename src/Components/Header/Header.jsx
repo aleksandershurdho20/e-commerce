@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import { Home } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
-
+import { NavLink } from "react-router-dom";
 const useStyles = makeStyles({
   navbarDisplayFlex: {
     display: `flex`,
@@ -23,13 +23,16 @@ const useStyles = makeStyles({
   linkText: {
     textDecoration: `none`,
     textTransform: `uppercase`,
-    color: `white`,
+    color: ` #6A983C`,
+  },
+  header: {
+    background: "white",
   },
 });
 
 const navLinks = [
-  { title: `about us`, path: `/about-us` },
-  { title: `product`, path: `/product` },
+  { title: `Login`, path: `/login` },
+  { title: `Sign Up`, path: `/signup` },
   { title: `blog`, path: `/blog` },
   { title: `contact`, path: `/contact` },
   { title: `faq`, path: `/faq` },
@@ -39,11 +42,13 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.header}>
       <Toolbar>
         <Container maxWidth="md" className={classes.navbarDisplayFlex}>
           <IconButton edge="start" color="inherit" aria-label="home">
-            <Home fontSize="large" />
+            <NavLink to="/">
+              <Home fontSize="large" />
+            </NavLink>
           </IconButton>
           <List
             component="nav"
